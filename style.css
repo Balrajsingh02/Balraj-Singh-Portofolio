@@ -18,6 +18,7 @@ body {
   font-family: Roboto-mono, monospace;
   padding: 0px;
   margin: 0px;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -39,7 +40,7 @@ header {
 }
 
 .nav-bar img {
-  width: 6vw;
+  max-width: 12vw;
   height: auto;
 }
 
@@ -390,6 +391,383 @@ footer {
 
 /* media queries */
 
+/* site is responsive for
+  -> 320px — 480px: Mobile devices
+  -> 481px — 768px: iPads, Tablets (both) 
+  -> 769px — 1024px: Small screens, laptops (both)
+  -> 1025px — 1200px: Desktops, large screens (Both) 
+  -> 1201px and more —  Extra large screens, TV
+
+*/
+
+/* 769px — 1024px: Small screens, laptops */
+@media (max-width: 1024px) and (max-height: 769px) {
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-content p {
+    font-size: 1.7em;
+    text-align: left;
+  }
+
+  .project-mockup img {
+    width: 900px;
+    height: auto;
+  }
+
+  .project-btn {
+    align-self: center;
+    width: 24vw;
+    height: 10vh;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+  }
+
+  .project-content ul li {
+    font-size: 1.5em;
+  }
+
+  /* contact section */
+  #contact-section {
+    padding: 0vh 5vw;
+  }
+
+  form {
+    font-size: 1.5em;
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  form input {
+    border: 2px solid;
+    font-size: 1em;
+  }
+
+  form textarea {
+    height: 25vh;
+    border: 2px solid;
+  }
+
+  form button {
+    width: 100%;
+    border: 2px solid;
+    font-size: 1em;
+  }
+
+  /* footer */
+  footer {
+    font-size: 1.8em;
+  }
+}
+
+/* 769px — 1024px: Small screens, laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    width: 100%;
+    height: 100svh;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ef402f;
+  }
+
+  .nav-bar img {
+    width: 8vw;
+  }
+
+  .nav-bar ul {
+    padding: 4vw;
+  }
+
+  .nav-bar ul li {
+    display: none;
+  }
+
+  #bar {
+    display: block;
+    font-size: 4vh;
+  }
+
+  #mobile-navbar {
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+  }
+
+  #mobile-navbar p a {
+    color: #212529;
+    text-decoration: none;
+    font-size: 1.75em;
+  }
+
+  /* hero section */
+  .hero-section {
+    align-items: center;
+    flex-direction: column;
+    padding: 4vh 2vw;
+  }
+
+  .headerH2 {
+    font-size: 4.5em;
+  }
+
+  .educationH2 {
+    font-size: 3.5em;
+  }
+
+  .content {
+    font-size: 0.75em;
+  }
+
+  .content p {
+    font-size: 2em;
+    text-align: left;
+  }
+
+  .content h1 {
+    font-size: 4em;
+    font-family: exo2, sans-serif;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 80%;
+  }
+
+  .content button {
+    width: 100%;
+    border: 2px solid #212529;
+    font-size: 1.75em;
+  }
+
+  /* about section */
+
+  #about-section {
+    padding: 0vh 7vw;
+    font-size: 1.75em;
+  }
+
+  #about-section p {
+    text-align: left;
+  }
+
+  /* Project section */
+
+  .project-content {
+    width: 100%;
+    font-size: 1.75em;
+  }
+
+  .project-content p {
+    padding: 2vh;
+    text-align: left;
+  }
+
+  .project-content ul li {
+    padding: 2vh 2vw;
+    list-style: inside;
+    list-style-type: "+ ";
+  }
+
+  .project-btn {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    width: 100%;
+    font-size: 1.125em;
+  }
+
+  .project-mockup img {
+    width: 700px;
+    height: auto;
+  }
+
+  /* Education Section */
+
+  #education-section {
+    font-size: 1.75em;
+    padding: 0vh 7vw;
+  }
+
+  .courses-info-class {
+    text-align: left;
+  }
+
+  #education-section {
+    padding: 0vh 7vw;
+  }
+
+  /* Skills seciton */
+  .my-skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .my-skills div h2 {
+    font-size: 2em;
+  }
+
+  .my-skills div img {
+    width: 20vw;
+  }
+
+  /* contact section */
+  #contact-section {
+    padding: 0vh 5vw;
+  }
+
+  form {
+    font-size: 1.5em;
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  form input {
+    border: 2px solid;
+    font-size: 1em;
+  }
+
+  form textarea {
+    height: 25vh;
+    border: 2px solid;
+  }
+
+  form button {
+    width: 100%;
+    border: 2px solid;
+    font-size: 1em;
+  }
+
+  /* footer */
+  footer {
+    font-size: 1.8em;
+  }
+}
+
+/* 481px — 768px: iPads, Tablets portraits  */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .nav-bar ul {
+    padding: 4vw;
+  }
+
+  .nav-bar ul li {
+    display: none;
+  }
+
+  #bar {
+    display: block;
+    font-size: 4vh;
+  }
+
+  #mobile-navbar {
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+  }
+
+  #mobile-navbar p a {
+    color: #212529;
+    text-decoration: none;
+    font-size: 1.75em;
+  }
+
+  /* hero section */
+  .hero-section {
+    align-items: center;
+    flex-direction: column;
+    padding: 4vh 2vw;
+  }
+
+  .content {
+    font-size: 0.75em;
+  }
+
+  .content p {
+    font-size: 2em;
+    text-align: left;
+  }
+
+  .content h1 {
+    font-size: 4em;
+    font-family: exo2, sans-serif;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 90%;
+  }
+
+  .content button {
+    width: 100%;
+  }
+
+  /* about section */
+
+  #about-section {
+    padding: 0vh 7vw;
+  }
+
+  #about-section p {
+    text-align: left;
+  }
+
+  /* Project section */
+
+  .project-content {
+    width: 100%;
+  }
+
+  .project-content p {
+    padding: 2vh;
+    text-align: left;
+  }
+
+  .project-content ul li {
+    padding: 2vh 2vw;
+    list-style: inside;
+    list-style-type: "+ ";
+  }
+
+  .project-btn {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    width: 100%;
+    font-size: 1.125em;
+  }
+
+  .project-mockup img {
+    width: 450px;
+    height: auto;
+  }
+
+  /* Education Section */
+  #education-section {
+    padding: 0vh 7vw;
+  }
+}
+
+/* 481px — 768px: iPads, Tablets landscape */
+@media (min-width: 768px) and (max-width: 481px) {
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-btn {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    width: 100%;
+    font-size: 1.125em;
+  }
+}
+
 /* portrait */
 @media screen and (max-width: 375px) and (orientation: portrait) {
   header {
@@ -414,7 +792,7 @@ footer {
   }
 
   #mobile-navbar {
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -550,6 +928,8 @@ footer {
   .my-skills div h2 {
     font-size: 1em;
   }
+
+  /* Form section */
 
   form button {
     margin-top: 4vh;
@@ -699,5 +1079,235 @@ footer {
     font-family: Roboto-mono, monospace;
     font-weight: 500;
     padding: 2.5vw;
+  }
+}
+
+/* 1025px — 1200px: Desktops, large screens */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  header {
+    width: 100%;
+    height: 100svh;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ef402f;
+  }
+
+  .nav-bar img {
+    width: 8vw;
+  }
+
+  .nav-bar ul {
+    padding: 4vw;
+  }
+
+  .nav-bar ul li {
+    display: none;
+  }
+
+  #bar {
+    display: block;
+    font-size: 4vh;
+  }
+
+  #mobile-navbar {
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+  }
+
+  #mobile-navbar p a {
+    color: #212529;
+    text-decoration: none;
+    font-size: 1.75em;
+  }
+
+  /* hero section */
+  .hero-section {
+    align-items: center;
+    flex-direction: column;
+    padding: 4vh 2vw;
+  }
+
+  .headerH2 {
+    font-size: 4.5em;
+  }
+
+  .educationH2 {
+    font-size: 3.5em;
+  }
+
+  .content {
+    font-size: 0.75em;
+  }
+
+  .content p {
+    font-size: 3em;
+    text-align: left;
+  }
+
+  .content h1 {
+    font-size: 6em;
+    font-family: exo2, sans-serif;
+  }
+
+  .hero-image img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .content button {
+    width: 100%;
+    border: 3px solid #212529;
+    font-size: 2.5em;
+  }
+
+  /* about section */
+
+  #about-section {
+    padding: 0vh 7vw;
+    font-size: 1.75em;
+  }
+
+  #about-section p {
+    text-align: left;
+  }
+
+  /* Project section */
+
+  .project-content {
+    width: 100%;
+    font-size: 1.75em;
+  }
+
+  .project-content p {
+    padding: 2vh;
+    text-align: left;
+  }
+
+  .project-content ul li {
+    padding: 2vh 2vw;
+    list-style: inside;
+    list-style-type: "+ ";
+  }
+
+  .project-btn {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    width: 100%;
+    font-size: 1.125em;
+  }
+
+  .project-mockup img {
+    width: 900px;
+    height: auto;
+  }
+
+  /* Education Section */
+
+  #education-section {
+    font-size: 1.75em;
+    padding: 0vh 7vw;
+  }
+
+  .courses-info-class {
+    text-align: left;
+  }
+
+  #education-section {
+    padding: 0vh 7vw;
+  }
+
+  /* Skills seciton */
+  .my-skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .my-skills div h2 {
+    font-size: 2em;
+  }
+
+  .my-skills div img {
+    width: 20vw;
+  }
+
+  /* contact section */
+  #contact-section {
+    padding: 0vh 5vw;
+  }
+
+  form {
+    font-size: 2em;
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  form input {
+    border: 2px solid;
+    font-size: 1em;
+  }
+
+  form textarea {
+    height: 25vh;
+    border: 2px solid;
+  }
+
+  form button {
+    width: 100%;
+    border: 2px solid;
+    font-size: 1.5em;
+  }
+
+  /* footer */
+  footer {
+    font-size: 1.8em;
+  }
+}
+
+/* 1201px and more —  Extra large screens, TV */
+@media only screen and (min-width: 1201px) {
+  .project-content {
+    width: 100%;
+    font-size: 1.75em;
+  }
+
+  .project-mockup img {
+    width: 980px;
+    height: auto;
+  }
+
+  /* contact section */
+  #contact-section {
+    padding: 0vh 5vw;
+  }
+
+  form {
+    font-size: 1.5em;
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  form input {
+    border: 2px solid;
+    font-size: 1em;
+  }
+
+  form textarea {
+    height: 25vh;
+    border: 2px solid;
+  }
+
+  form button {
+    width: 100%;
+    border: 2px solid;
+    font-size: 1em;
+  }
+
+  /* footer */
+  footer {
+    font-size: 1.8em;
   }
 }
