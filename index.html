@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/fevicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/fevicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/fevicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/fevicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Balraj Singh | Web Developer</title>
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <nav class="nav-bar">
+        <a href="#"
+          ><img src="/assets/Logo  - No Background.png" alt="logo"
+        /></a>
+        <ul>
+          <li><a href="#about-section">ABOUT</a></li>
+          <li><a href="#project-section">PROJECTS</a></li>
+          <li><a href="#education-section">EDUCATION</a></li>
+          <li><a href="#skill-section">SKILLS</a></li>
+          <li><a href="#contact-section">CONTACT</a></li>
+          <div id="bar"><i class="fa-solid fa-bars bar"></i></div>
+        </ul>
+      </nav>
+      <!-- mobile navbar -->
+      <nav id="mobile-navbar">
+        <p><a href="#about-section">ABOUT</a></p>
+        <p><a href="#project-section">PROJECTS</a></p>
+        <p><a href="#education-section">EDUCATION</a></p>
+        <p><a href="#skill-section">SKILLS</a></p>
+        <p><a href="#contact-section">CONTACT</a></p>
+      </nav>
+
+      <!-- hero section -->
+      <section class="hero-section">
+        <div class="content">
+          <p>Hi, my name is</p>
+          <h1>Balraj Singh</h1>
+          <p>Freelance Web Developer in India.</p>
+          <button class="btn">
+            <a href="#contact-section">GET IN TOUCH</a>
+          </button>
+        </div>
+        <div class="hero-image">
+          <img
+            src="/assets/My Photo - No Background.png"
+            alt="Balraj's Photo"
+          />
+        </div>
+      </section>
+    </header>
+    <menu>
+      <section id="about-section">
+        <h2 class="headerH2">ABOUT</h2>
+        <p>
+          Hello, I'm Balraj Singh, born in 1997 in Punjab, India. I have a deep
+          passion for programming and am currently immersed in learning
+          full-stack development. In 2018, I graduated with a Bachelor of Arts
+          degree.
+        </p>
+        <p>
+          Beyond the world of coding, I find joy in playing badminton,
+          expressing myself through poetry, delving into books, and indulging in
+          the cinematic experience as well as playing clash of clans.
+        </p>
+        <p>
+          Whether you're a business owner eager to initiate an app or web
+          development project, a fellow developer looking for collaboration, or
+          someone just wanting to say hi, feel free to shoot me a message. Let's
+          work together and bring your ideas to life. I look forward to
+          connecting with you!
+        </p>
+      </section>
+      <!-- Projects section -->
+      <section id="project-section">
+        <h2 class="headerH2 padding-project-section">RECENT PROJECTS</h2>
+        <div class="project-showcase">
+          <div class="project-content">
+            <h3>Genie Message</h3>
+            <p>
+              GenieMessage: A JavaScript function for generating random messages
+              and advice based on selected genres. It randomly selects messages
+              and advice from specified genres, providing inspirational content.
+            </p>
+            <h4>DEVELOPMENT TOOLS</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <button class="project-btn">
+              <a
+                href="https://balrajsingh02.github.io/GenieMessage---Genre-based-Random-Message-and-Advice-Generator/"
+                target="_blank"
+                >VIEW PROJECT</a
+              >
+            </button>
+          </div>
+          <div class="project-mockup">
+            <img
+              src="/assets/Genie Message Project - Mockup.jpg"
+              alt="project-mockup"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- education section -->
+      <section id="education-section">
+        <div class="education-div">
+          <h2 class="headerH2">EDUCATION</h2>
+          <div>
+            <button class="div-btn" id="latest-course">
+              Full-Stack Engineer
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+          </div>
+
+          <div>
+            <button class="div-btn" id="javascript">
+              JavaScript
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+          </div>
+          <div>
+            <button class="div-btn" id="graduation">
+              Graduation
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+          </div>
+          <div>
+            <button class="div-btn" id="senior-secondary">
+              Senior Secondary
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+          </div>
+          <div>
+            <button class="div-btn" id="matriculation">
+              Matriculation
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- educaiton information -->
+        <div class="education-information">
+          <!-- latest course -->
+          <div id="latest-course-info" class="courses-info-class">
+            <span
+              >October 2023 - Present | from <strong>Codecademy</strong></span
+            >
+            <p>
+              In this journey, I am encountering all the major technologies that
+              a full-stack developer should know. I am gaining a strong
+              foundation in <strong>JavaScript</strong> programming, becoming
+              proficient in using <strong>front-end</strong> technologies like
+              <strong>HTML</strong>, <strong>CSS</strong>,
+              <strong>React</strong>, and building secure
+              <strong>back-ends</strong> with <strong>Node/Express</strong> and
+              <strong>PostgreSQL</strong>.
+            </p>
+            <p>
+              Additionally, there is a focus on preparing me for the infamous
+              <strong>technical interviews</strong> I'll encounter once I begin
+              my job hunt.
+            </p>
+            <p>
+              Looking ahead, I will continue to enhance my skills and knowledge.
+              I will explore <strong>advanced programming concepts</strong>,
+              stay updated on emerging technologies, and apply my expertise to
+              <strong>real-world projects</strong>. Future opportunities include
+              delving into specialized areas, contributing to open-source
+              projects, and staying adaptable to the evolving landscape of
+              software development.
+            </p>
+            <p>
+              The journey ahead promises continuous growth and exciting
+              challenges, setting the stage for a successful and fulfilling
+              career as a full-stack developer.
+            </p>
+          </div>
+
+          <!-- javascript -->
+          <div id="javascript-info" class="courses-info-class">
+            <span
+              >March 2023 - October 2023 | from
+              <strong>Codecademy</strong></span
+            >
+            <p>
+              This course equipped me with JavaScript fundamentals and advanced
+              topics, enabling me to proficiently implement data types,
+              conditionals, functions, and utilize JavaScript's latest syntax. I
+              can now create classes, employ inheritance, and use modules
+              effectively. Projects, including a temperature converter and
+              salary trends data viewer, honed my practical skills.
+              Additionally, I gained insights into JavaScript's concurrency
+              module and event loop. This comprehensive learning experience
+              solidified my ability to work with JavaScript in various
+              environments, emphasizing practical application through engaging
+              projects and reinforcing my understanding of crucial programming
+              concepts.
+            </p>
+            <p>
+              <b> Projects Completed in this Course</b>
+              <i class="fa-solid fa-turn-down"></i>
+            </p>
+            <ul class="project-list">
+              <li>Kelvin Weather</li>
+              <li>Sleep Debt Calculator</li>
+              <li>Whale Talk</li>
+              <li>School Catalouge</li>
+              <li>WorkAround Explorer</li>
+              <li>Film Finder</li>
+            </ul>
+          </div>
+
+          <!-- graduation -->
+          <div id="graduation-info" class="courses-info-class">
+            <span
+              >May 2015 - May 2018 | from
+              <strong>Guru Nanak Dev University, Amritsar</strong></span
+            >
+
+            <p>
+              <b>STREAM: BACHELOR OF ARTS (B.A.)</b>
+            </p>
+
+            <p>
+              <b
+                >COLLEGE: SANT AVTAR SINGH JI MEMORIAL COLLEGE, SEECHEWAL
+                (JALANDHAR) (ASSOCIATE INSTITUTE)</b
+              >
+            </p>
+            <p><b>Marks: 1267/2400 (52.79%)</b></p>
+
+            <p><b>Subjects</b> <i class="fa-solid fa-turn-down"></i></p>
+
+            <ul class="project-list">
+              <li title="My favorite">COMPUTER SCIENCE</li>
+              <li>PUNJABI</li>
+              <li>ENGLISH</li>
+              <li>HISTORY</li>
+              <li>POLITICAL SCIENCE</li>
+            </ul>
+          </div>
+
+          <!-- Senior Secondary -->
+          <div id="senior-secondary-info" class="courses-info-class">
+            <span class="padding-class"
+              >March 2014 - March 2015 | from
+              <strong>Punjab School Education Board</strong></span
+            >
+
+            <p>
+              <b>STREAM: ARTS</b>
+            </p>
+
+            <p>
+              <b
+                >School: K.R.M.D.A.V. COLLEGIATE SENIOR SECONDARY SCHOOL,
+                NAKODAR (JALANDHAR)</b
+              >
+            </p>
+            <p><b>Marks: 301/450 (68.88%)</b></p>
+
+            <p><b>Subjects</b> <i class="fa-solid fa-turn-down"></i></p>
+            <ul class="project-list">
+              <li title="My favorite">COMPUTER APPLICATION</li>
+              <li title="My favorite">COMPUTER SCIENCE</li>
+              <li>PUNJABI</li>
+              <li>ENGLISH</li>
+              <li>HISTORY</li>
+              <li>POLITICAL SCIENCE</li>
+              <li>ENVIRONMENT EDUCAITON</li>
+            </ul>
+          </div>
+
+          <!-- Matriculation -->
+          <div id="matriculation-info" class="courses-info-class">
+            <span class="padding-class"
+              >March 2012 - March 2013 | from
+              <strong>Punjab School Education Board</strong></span
+            >
+
+            <p>
+              <b>STREAM: ARTS</b>
+            </p>
+
+            <p>
+              <b
+                >School: GOVERNMENT SENIOR SECONDARY SCHOOL, MALSIAN
+                (JALANDHAR)</b
+              >
+            </p>
+            <p><b>Marks: 466/650 (71.69%)</b></p>
+
+            <p><b>Subjects</b> <i class="fa-solid fa-turn-down"></i></p>
+            <ul class="project-list">
+              <li title="My favorite">COMPUTER SCIENCE</li>
+              <li>PUNJABI</li>
+              <li>ENGLISH</li>
+              <li>HINDI</li>
+              <li>MATH</li>
+              <li>SCIENCE</li>
+              <li>SOCIAL STUDIES</li>
+              <li>HEALTH AND PHYSICAL EDUCATION</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skill Section -->
+      <section id="skill-section">
+        <h2 class="headerH2">Skills</h2>
+        <div class="my-skills">
+          <div>
+            <h2>HTML</h2>
+            <img src="/assets/html logo.png" alt="html logo" />
+          </div>
+          <div>
+            <h2>CSS</h2>
+            <img src="/assets/CSS logo.png" alt="css logo" />
+          </div>
+          <div>
+            <h2>JAVASCRIPT</h2>
+            <img src="/assets/JS logo.png" alt="JS logo" />
+          </div>
+          <div>
+            <h2>GIT</h2>
+            <img src="/assets/Git logo.png" alt="Git logo" />
+          </div>
+          <div>
+            <h2>GITHUB</h2>
+            <img src="/assets/Github logo.png" alt="github logo" />
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section -->
+      <section id="contact-section">
+        <h2 class="headerH2">LET'S BUILD A THING</h2>
+
+        <form>
+          <!-- name -->
+          <label for="fname">First Name</label>
+          <input
+            id="fname"
+            name="fname"
+            type="text"
+            required
+            placeholder="First Name"
+          />
+
+          <label for="lname">Last Name</label>
+          <input
+            id="lname"
+            name="lname"
+            type="text"
+            required
+            placeholder="Last Name"
+          />
+
+          <!-- email and phone number -->
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            placeholder="abc@email.com"
+          />
+
+          <label for="phone">Phone</label>
+          <input
+            id="phone"
+            name="phone"
+            type="number"
+            required
+            placeholder="Phone"
+          />
+
+          <!-- subject and Message -->
+          <label for="subject">Subject</label>
+          <input
+            id="subject"
+            name="subject"
+            type="text"
+            required
+            placeholder="Subject"
+          />
+
+          <label for="textarea">Message</label>
+          <textarea id="textarea"></textarea>
+
+          <!-- submit -->
+          <button type="submit">SEND IT</button>
+        </form>
+      </section>
+    </menu>
+
+    <!-- footer -->
+    <footer>© Copyright 2024 − Balraj Singh</footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
